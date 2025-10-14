@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XDocs – Free Game Dev Scripts & Templates</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      color: #fff;
+      text-align: center;
+      padding: 0 20px;
+    }
+    header {
+      padding: 50px 20px 10px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    p {
+      max-width: 700px;
+      margin: 10px auto;
+      line-height: 1.6;
+      font-size: 1.1em;
+    }
+    .btn {
+      display: inline-block;
+      background: #00c6ff;
+      background: linear-gradient(to right, #0072ff, #00c6ff);
+      color: #fff;
+      padding: 14px 35px;
+      border-radius: 50px;
+      font-size: 1.1em;
+      text-decoration: none;
+      margin-top: 25px;
+      transition: 0.3s ease;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+    }
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      font-size: 0.9em;
+      opacity: 0.8;
+    }
+    #message {
+      margin-top: 15px;
+      font-size: 1.1em;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to XDocs</h1>
+    <p><b>Free Scripts & Game Projects for Developers</b></p>
+  </header>
+
+  <section>
+    <p>
+      Discover, download, and use <b>free scripts, code snippets, and project templates</b> 
+      for game development! XDocs supports the <b>ItsMagic Game Engine</b> and other 
+      popular engines, giving you the tools to bring your game ideas to life faster.
+    </p>
+    <p>
+      🔹 Access a growing library of <b>free scripts and templates</b><br>
+      🔹 <b>Local storage login</b> keeps your data safe and offline<br>
+      🔹 Perfect for beginners & experienced developers alike
+    </p>
+    <a href="#" class="btn" id="downloadBtn">Download XDocs App</a>
+    <p id="message"></p>
+  </section>
+
+  <footer>
+    Created by <b>A4Devs (Hazik)</b> © 2025
+  </footer>
+
+  <script>
+    document.getElementById("downloadBtn").addEventListener("click", function(e) {
+      e.preventDefault();
+      const message = document.getElementById("message");
+      message.style.display = "block";
+      message.textContent = "Download XDocs App in 3 seconds...";
+      
+      setTimeout(() => {
+        window.open("https://www.mediafire.com/file/c8deqthmklf1xgt/signed_XDocs.apk/file", "_blank");
+        message.textContent = "Redirecting to download...";
+      }, 3000);
+    });
+  </script>
+</body>
+</html>
